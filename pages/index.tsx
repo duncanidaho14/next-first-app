@@ -4,7 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { v4 as uuidv4 } from 'uuid';
 
-const Home: NextPage = (props) => {
+const Home: NextPage = (props:any) => {
   console.log(props);
   return (
     <div className={styles.container}>
@@ -58,7 +58,7 @@ const Home: NextPage = (props) => {
         <h2 className={styles.titre}>Vocabulaire de base</h2>
         <table className={styles.tableau}>
           <tbody>
-            {props.array.map(el => (
+            {props.array.map((el:any) => (
               <tr key={uuidv4()}>
                 <td>{el.en}</td>
                 <td>{el.fr}</td>

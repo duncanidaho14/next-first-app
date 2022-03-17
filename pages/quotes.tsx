@@ -1,7 +1,7 @@
 import React from 'react'
-import { getStaticProps } from '.'
+//import { getStaticProps } from './'
 
-export default function quotes(props) {
+export default function quotes(props: any) {
     console.log(props);
   return (
     <>
